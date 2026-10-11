@@ -85,7 +85,7 @@ void bmi088_leer(float acc_g[3], float giro_dps[3])
 {
   uint8_t b[6];
 
-  /* Escala del acelerómetro: valor / 32768 · 2^(ACC_RANGE + 1) · 1,5 = valor / 32768 · 24 g */
+  /* Escala del acelerómetro: valor / 32768 * 2^(ACC_RANGE + 1) * 1,5 = valor / 32768 * 24 g */
   leer(ACC, ACC_DATA, b, 6, 1);
   for (int i = 0; i < 3; i++)
     acc_g[i] = (int16_t)(b[2 * i + 1] << 8 | b[2 * i]) * (24.0f / 32768.0f);

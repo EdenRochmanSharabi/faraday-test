@@ -8,7 +8,7 @@
 #define CMD_CONV_D1    0x48         /* presión, OSR 4096 (máxima resolución) */
 #define CMD_CONV_D2    0x58         /* temperatura, OSR 4096 */
 #define CMD_ADC_READ   0x00
-#define CMD_PROM_READ  0xA0         /* + 2·i, i = 0…7 */
+#define CMD_PROM_READ  0xA0         /* + 2*i, i = 0…7 */
 #define T_CONVERSION   10           /* ms; máximo 9,04 ms con OSR 4096 */
 
 static uint16_t prom[8];  /* C0: fábrica, C1…C6: coeficientes, C7: CRC */

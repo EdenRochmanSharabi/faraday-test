@@ -110,7 +110,7 @@ def figura_mach(carpeta):
     cps = np.array([cp.x_cp(m) for m in machs])
     fig, ax_cohete, ax_cp, ax_cn = lienzo(
         "Centro de presiones frente al número de Mach",
-        "Cohete Camões (EuRoC'23) · α ≈ 0 · método de Barrowman")
+        "Cohete Camões (EuRoC'23), α ≈ 0, método de Barrowman")
 
     dibujar_cohete(ax_cohete, [
         (cp.X_NARIZ, "fuerza de la ojiva", AZUL, "s"),
@@ -149,7 +149,7 @@ def figura_alfa(carpeta, mach=0.3):
     cps = np.array([cp.x_cp(mach, np.radians(a)) for a in alfas])
     fig, ax_cohete, ax_cp, ax_cn = lienzo(
         "Centro de presiones frente al ángulo de ataque",
-        f"Cohete Camões (EuRoC'23) · Mach {coma(mach)} · Barrowman extendido (Galejs)")
+        f"Cohete Camões (EuRoC'23), Mach {coma(mach)}, Barrowman extendido (Galejs)")
 
     dibujar_cohete(ax_cohete, [
         (cp.X_NARIZ, "fuerza de la ojiva", AZUL, "s"),
