@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+avionica/avionica_f405/Debug/
+avionica/avionica_f405/Release/
+avionica/test/test_drivers
