@@ -1,4 +1,4 @@
-# Faraday Rocketry UPV · Prueba de acceso 2026-2027
+# Faraday Rocketry UPV: prueba de acceso 2026-2027
 
 Eden Rochman Sharabi
 
